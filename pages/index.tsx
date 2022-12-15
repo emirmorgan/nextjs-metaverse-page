@@ -3,6 +3,9 @@ import Head from "next/head";
 //Components
 import Navbar from "../components/Navbar";
 
+//Sections
+import Hero from "../sections/Hero";
+
 export default function Home() {
   return (
     <>
@@ -12,6 +15,7 @@ export default function Home() {
       </Head>
       <div className="bg-primary-black overflow-hidden">
         <Navbar />
+        <Hero />
       </div>
     </>
   );
