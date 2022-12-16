@@ -8,6 +8,10 @@ import Hero from "../sections/Hero";
 import About from "../sections/About";
 import Explore from "../sections/Explore";
 import GetStarted from "../sections/GetStarted";
+import WhatsNew from "../sections/WhatsNew";
+import World from "../sections/World";
+import Insights from "../sections/Insights";
+import Feedback from "../sections/Feedback";
 
 export default function Home() {
   return (
@@ -25,8 +29,15 @@ export default function Home() {
           <Explore />
         </div>
         <div className="relative">
-          <div className="gradient-04" />
           <GetStarted />
+          <div className="gradient-04" />
+          <WhatsNew />
+        </div>
+        <World />
+        <div className="relative">
+          <Insights />
+          <div className="gradient-04" />
+          <Feedback />
         </div>
       </div>
     </>
