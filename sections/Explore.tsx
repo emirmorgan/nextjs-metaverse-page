@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+
 import ExploreCard from "../components/ExploreCard";
 import { staggerContainer } from "../utils/motion";
 
