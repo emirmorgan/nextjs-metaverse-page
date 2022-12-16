@@ -9,7 +9,7 @@ const Hero = () => {
         variants={staggerContainer(0.2, 1)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true }}
         className="flex flex-col w-full 2xl:max-w-[1280px] mx-auto"
       >
         <div className="z-10 relative flex flex-col justify-center items-center">
@@ -43,15 +43,15 @@ const Hero = () => {
             alt="hero_cover"
             className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
           />
-          <Link href="#explore">
-            <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-10 relative z-10">
+          <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] relative z-10">
+            <Link href="#explore" className="mr-10">
               <img
                 src="assets/stamp.png"
                 alt="stamp"
                 className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain"
               />
-            </div>
-          </Link>
+            </Link>
+          </div>
         </motion.div>
       </motion.div>
     </section>

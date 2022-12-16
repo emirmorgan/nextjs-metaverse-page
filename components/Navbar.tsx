@@ -8,6 +8,7 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
+      viewport={{ once: true }}
       className="relative py-8 px-6 sm:px-16"
     >
       <div className="flex justify-between w-full 2xl:max-w-[1280px] mx-auto gap-8">
