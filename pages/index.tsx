@@ -2,10 +2,11 @@ import Head from "next/head";
 
 //Components
 import Navbar from "../components/Navbar";
-import About from "../sections/About";
 
 //Sections
 import Hero from "../sections/Hero";
+import About from "../sections/About";
+import Explore from "../sections/Explore";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
         <Hero />
         <div className="relative">
           <About />
+          <div className="gradient-03" />
+          <Explore />
         </div>
       </div>
     </>

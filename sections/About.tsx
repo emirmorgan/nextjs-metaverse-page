@@ -3,7 +3,7 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 
 const About = () => {
   return (
-    <section>
+    <section className="sm:p-16 xs:p-8 px-6 py-12 relative z-10">
       <div className="gradient-02" />
       <motion.div
         variants={staggerContainer(0.2, 1)}
@@ -21,7 +21,7 @@ const About = () => {
 
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
-          className="text-center text-secondary-white text-[20px] sm:text-[32px] px-12 mt-4"
+          className="text-center text-secondary-white text-[20px] sm:text-[32px] mt-4"
         >
           <span className="font-extrabold text-white">Metaverse</span> is a new
           thing in the future, where you can enjoy the virtual world by feeling
