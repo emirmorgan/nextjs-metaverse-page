@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import InsightCard from "../components/InsightCard";
 import { staggerContainer } from "../utils/motion";
+
+import InsightCard from "../components/InsightCard";
 
 const Insights = () => {
   const insights = [
