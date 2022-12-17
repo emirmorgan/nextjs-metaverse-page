@@ -3,6 +3,9 @@ import Image from "next/image";
 import { navVariants } from "../utils/motion";
 
 const Navbar = () => {
+  const scaleHover =
+    "cursor-pointer hover:scale-105 transition-all ease-linear duration-150";
+
   return (
     <motion.nav
       variants={navVariants}
@@ -17,7 +20,7 @@ const Navbar = () => {
           alt="search"
           width={24}
           height={24}
-          className="object-contain cursor-pointer"
+          className={`object-contain ${scaleHover}`}
         />
         <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white">
           METAVERSE
@@ -27,7 +30,7 @@ const Navbar = () => {
           alt="menu"
           width={24}
           height={24}
-          className="object-contain cursor-pointer"
+          className={`object-contain ${scaleHover}`}
         />
       </div>
       <div className="absolute z-[-1] w-[50%] inset-0 gradient-01"></div>

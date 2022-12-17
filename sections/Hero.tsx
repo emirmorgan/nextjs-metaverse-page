@@ -48,7 +48,7 @@ const Hero = () => {
               <img
                 src="assets/stamp.png"
                 alt="stamp"
-                className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain"
+                className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain animate-[spin_3s_infinite] hover:animate-none hover:scale-90"
               />
             </Link>
           </div>

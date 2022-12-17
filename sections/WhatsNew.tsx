@@ -72,7 +72,7 @@ const WhatsNew = () => {
           <img
             src="assets/whats-new.png"
             alt="get-started"
-            className="w-[90%] h-[90%] object-contain"
+            className="w-[90%] h-[90%] object-contain animate-[pulse_5s_infinite]"
           ></img>
         </motion.div>
       </motion.div>

@@ -37,7 +37,7 @@ const Footer = () => {
           </h4>
           <button
             type="button"
-            className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]"
+            className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px] hover:scale-105 hover:shadow-[3px_3px_60px_rgba(35,98,225,0.3)] transition-all ease-linear"
           >
             <img
               src="/assets/headset.svg"
@@ -55,7 +55,7 @@ const Footer = () => {
           <div className="flex items-center justify-between flex-wrap gap-4">
             <h4 className="font-extrabold text-[24px] text-white">METAVERSE</h4>
             <p className="font-normal text-[14px] text-white opacity-50">
-              Copyright © 2021 - 2022 Metaverse. All rights reserved.
+              Copyright © 2022 - 2023 Metaverse. All rights reserved.
             </p>
 
             <div className="flex gap-6">

@@ -28,7 +28,7 @@ const InsightCard = ({ imgUrl, title, subtitle, index }: CardProps) => {
             {subtitle}
           </p>
         </div>
-        <div className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white">
+        <div className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white cursor-pointer hover:rotate-[80deg] hover:scale-105 transition-all ease-linear duration-200">
           <img
             src="/assets/arrow.svg"
             alt="arrow"
