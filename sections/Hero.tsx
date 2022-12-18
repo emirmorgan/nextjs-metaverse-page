@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { slideIn, staggerContainer, textVariant } from "../utils/motion";
+import { slideIn, textVariant } from "../utils/motion";
 
 const Hero = () => {
   return (
     <section className="py-12 xs:py-8 sm:py-16 pl-6 sm:pl-16">
       <motion.div
-        variants={staggerContainer(0.2, 1)}
+        variants={slideIn("right", "tween", 0.4, 1)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
@@ -33,10 +33,7 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        <motion.div
-          variants={slideIn("right", "tween", 0.5, 1)}
-          className="relative w-full md:-mt-[20px] -mt-[12px]"
-        >
+        <div className="relative w-full md:-mt-[20px] -mt-[12px]">
           <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[20px]" />
           <img
             src="assets/cover.png"
@@ -52,7 +49,7 @@ const Hero = () => {
               />
             </Link>
           </div>
-        </motion.div>
+        </div>
       </motion.div>
     </section>
   );

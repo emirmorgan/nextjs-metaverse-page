@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { planetVariants, staggerContainer, fadeIn } from "../utils/motion";
+import { planetVariants, fadeIn, appear } from "../utils/motion";
 
 const WhatsNew = () => {
   const newFeatures = [
@@ -20,7 +20,7 @@ const WhatsNew = () => {
   return (
     <section className="sm:p-16 xs:p-8 px-6 py-12">
       <motion.div
-        variants={staggerContainer(0.2, 1)}
+        variants={appear}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
@@ -30,18 +30,12 @@ const WhatsNew = () => {
           variants={fadeIn("right", "tween", 0.2, 1)}
           className="flex-[0.95] flex justify-center flex-col"
         >
-          <motion.span
-            variants={staggerContainer(0.2, 1)}
-            className="font-normal text-center text-[14px] text-secondary-white"
-          >
+          <span className="font-normal text-center text-[14px] text-secondary-white">
             | Whats new?
-          </motion.span>
-          <motion.h2
-            variants={staggerContainer(0.2, 1)}
-            className="text-center text-white mt-[8px] font-bold md:text-[64px] text-[40px]"
-          >
+          </span>
+          <h2 className="text-center text-white mt-[8px] font-bold md:text-[64px] text-[40px]">
             What&apos;s new about Metaversus?
-          </motion.h2>
+          </h2>
           <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
             {newFeatures.map((feature, index) => (
               <div

@@ -4,8 +4,6 @@ export const navVariants = {
     y: -50,
     transition: {
       type: "spring",
-      stiffness: 300,
-      damping: 140,
     },
   },
   show: {
@@ -13,8 +11,7 @@ export const navVariants = {
     y: 0,
     transition: {
       type: "spring",
-      stiffness: 80,
-      delay: 1,
+      delay: 0.8,
     },
   },
 };
@@ -32,16 +29,6 @@ export const slideIn = (direction, type, delay, duration) => ({
       delay,
       duration,
       ease: "easeOut",
-    },
-  },
-});
-
-export const staggerContainer = (staggerChildren, delayChildren) => ({
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren,
-      delayChildren,
     },
   },
 });
@@ -145,8 +132,6 @@ export const footerVariants = {
     y: 50,
     transition: {
       type: "spring",
-      stiffness: 300,
-      damping: 140,
     },
   },
   show: {
@@ -154,8 +139,24 @@ export const footerVariants = {
     y: 0,
     transition: {
       type: "spring",
-      stiffness: 80,
       delay: 0.5,
+    },
+  },
+};
+
+export const appear = {
+  hidden: {
+    opacity: 0,
+    transition: {
+      type: "spring",
+    },
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      type: "spring",
+      delay: 0.6,
     },
   },
 };

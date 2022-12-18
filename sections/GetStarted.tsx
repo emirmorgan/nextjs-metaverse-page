@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { staggerContainer, fadeIn, planetVariants } from "../utils/motion";
+import { appear, fadeIn, planetVariants } from "../utils/motion";
 
 const GetStarted = () => {
   const features = [
@@ -11,7 +11,7 @@ const GetStarted = () => {
   return (
     <section className="sm:p-16 xs:p-8 px-6 py-12">
       <motion.div
-        variants={staggerContainer(0.2, 1)}
+        variants={appear}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
@@ -31,18 +31,12 @@ const GetStarted = () => {
           variants={fadeIn("left", "tween", 0.2, 1)}
           className="flex-[0.75] flex justify-center flex-col"
         >
-          <motion.span
-            variants={staggerContainer(0.2, 1)}
-            className="font-normal text-center text-[14px] text-secondary-white"
-          >
+          <span className="font-normal text-center text-[14px] text-secondary-white">
             | How Metaversus Works
-          </motion.span>
-          <motion.h2
-            variants={staggerContainer(0.2, 1)}
-            className="text-center text-white mt-[8px] font-bold md:text-[64px] text-[40px]"
-          >
+          </span>
+          <h2 className="text-center text-white mt-[8px] font-bold md:text-[64px] text-[40px]">
             Get started with just a few clicks
-          </motion.h2>
+          </h2>
           <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
             {features.map((feature, index) => (
               <div key={index} className="flex justify-center items-center">

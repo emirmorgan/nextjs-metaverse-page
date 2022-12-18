@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer, zoomIn } from "../utils/motion";
+import { fadeIn, slideIn, zoomIn } from "../utils/motion";
 
 const Feedback = () => {
   return (
     <section className="sm:p-16 xs:p-8 px-6 py-12">
       <motion.div
-        variants={staggerContainer(0.2, 1)}
+        variants={slideIn("left", "tween", 0.4, 1)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
