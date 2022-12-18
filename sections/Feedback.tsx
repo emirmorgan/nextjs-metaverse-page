@@ -5,14 +5,14 @@ const Feedback = () => {
   return (
     <section className="sm:p-16 xs:p-8 px-6 py-12">
       <motion.div
-        variants={slideIn("left", "tween", 0.4, 1)}
+        variants={slideIn("left", 0.4, 1)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
         className="2xl:max-w-[1280px] w-full mx-auto flex flex-col lg:flex-row gap-6"
       >
         <motion.div
-          variants={fadeIn("right", "tween", 0.2, 1)}
+          variants={fadeIn("right", 0.2, 1)}
           className="flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
         >
           <div className="feedback-gradient" />
@@ -31,7 +31,7 @@ const Feedback = () => {
           </div>
         </motion.div>
         <motion.div
-          variants={fadeIn("left", "tween", 0.2, 1)}
+          variants={fadeIn("left", 0.2, 1)}
           className="relative flex-1 flex justify-center items-center"
         >
           <img

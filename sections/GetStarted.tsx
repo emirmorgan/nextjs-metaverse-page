@@ -1,13 +1,9 @@
 import { motion } from "framer-motion";
+
 import { appear, fadeIn, planetVariants } from "../utils/motion";
+import { features } from "../constants/index";
 
 const GetStarted = () => {
-  const features = [
-    "Find a world that suits you and you want to enter",
-    "Enter the world by reading basmalah to be safe",
-    "No need to beat around the bush, just stay on the gas and have fun",
-  ];
-
   return (
     <section className="sm:p-16 xs:p-8 px-6 py-12">
       <motion.div
@@ -28,7 +24,7 @@ const GetStarted = () => {
           />
         </motion.div>
         <motion.div
-          variants={fadeIn("left", "tween", 0.2, 1)}
+          variants={fadeIn("left", 0.2, 1)}
           className="flex-[0.75] flex justify-center flex-col"
         >
           <span className="font-normal text-center text-[14px] text-secondary-white">

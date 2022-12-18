@@ -16,7 +16,7 @@ export const navVariants = {
   },
 };
 
-export const slideIn = (direction, type, delay, duration) => ({
+export const slideIn = (direction, delay, duration) => ({
   hidden: {
     x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
     y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
@@ -25,7 +25,7 @@ export const slideIn = (direction, type, delay, duration) => ({
     x: 0,
     y: 0,
     transition: {
-      type,
+      type: "spring",
       delay,
       duration,
       ease: "easeOut",
@@ -68,13 +68,13 @@ export const textVariant2 = {
     opacity: 1,
     y: 0,
     transition: {
-      type: "tween",
+      type: "spring",
       ease: "easeIn",
     },
   },
 };
 
-export const fadeIn = (direction, type, delay, duration) => ({
+export const fadeIn = (direction, delay, duration) => ({
   hidden: {
     x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
     y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
@@ -85,7 +85,7 @@ export const fadeIn = (direction, type, delay, duration) => ({
     y: 0,
     opacity: 1,
     transition: {
-      type,
+      type: "spring",
       delay,
       duration,
       ease: "easeOut",
@@ -118,7 +118,7 @@ export const zoomIn = (delay, duration) => ({
     scale: 1,
     opacity: 1,
     transition: {
-      type: "tween",
+      type: "spring",
       delay,
       duration,
       ease: "easeOut",

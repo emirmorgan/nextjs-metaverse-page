@@ -5,7 +5,7 @@ const World = () => {
   return (
     <section className="sm:p-16 xs:p-8 px-6 py-12">
       <motion.div
-        variants={fadeIn("up", "tween", 0.3, 1)}
+        variants={fadeIn("up", 0.3, 1)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
@@ -19,7 +19,7 @@ const World = () => {
           world
         </h2>
         <motion.div
-          variants={fadeIn("up", "tween", 0.3, 1)}
+          variants={fadeIn("up", 0.3, 1)}
           className="relative mt-[68px] flex w-full h-[550px]"
         >
           <img

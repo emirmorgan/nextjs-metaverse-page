@@ -1,26 +1,8 @@
 import { motion } from "framer-motion";
+
 import { footerVariants } from "../utils/motion";
-
+import { socials } from "../constants/index";
 const Footer = () => {
-  const socials = [
-    {
-      name: "twitter",
-      url: "/assets/twitter.svg",
-    },
-    {
-      name: "linkedin",
-      url: "/assets/linkedin.svg",
-    },
-    {
-      name: "instagram",
-      url: "/assets/instagram.svg",
-    },
-    {
-      name: "facebook",
-      url: "/assets/facebook.svg",
-    },
-  ];
-
   return (
     <motion.footer
       variants={footerVariants}

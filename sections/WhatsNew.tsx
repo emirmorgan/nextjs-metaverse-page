@@ -1,22 +1,9 @@
 import { motion } from "framer-motion";
+
 import { planetVariants, fadeIn, appear } from "../utils/motion";
+import { newFeatures } from "../constants/index";
 
 const WhatsNew = () => {
-  const newFeatures = [
-    {
-      imgUrl: "/assets/vrpano.svg",
-      title: "A new world",
-      subtitle:
-        "we have the latest update with new world for you to try never mind",
-    },
-    {
-      imgUrl: "/assets/headset.svg",
-      title: "More realistic",
-      subtitle:
-        "In the latest update, your eyes are narrow, making the world more realistic than ever",
-    },
-  ];
-
   return (
     <section className="sm:p-16 xs:p-8 px-6 py-12">
       <motion.div
@@ -27,7 +14,7 @@ const WhatsNew = () => {
         className="2xl:max-w-[1280px] w-full mx-auto flex flex-col lg:flex-row gap-8"
       >
         <motion.div
-          variants={fadeIn("right", "tween", 0.2, 1)}
+          variants={fadeIn("right", 0.2, 1)}
           className="flex-[0.95] flex justify-center flex-col"
         >
           <span className="font-normal text-center text-[14px] text-secondary-white">

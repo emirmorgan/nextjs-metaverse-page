@@ -6,28 +6,28 @@ const Hero = () => {
   return (
     <section className="py-12 xs:py-8 sm:py-16 pl-6 sm:pl-16">
       <motion.div
-        variants={slideIn("right", "tween", 0.4, 1)}
+        variants={slideIn("right", 0.4, 1)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
         className="flex flex-col w-full 2xl:max-w-[1280px] mx-auto"
       >
-        <div className="z-10 relative flex flex-col justify-center items-center">
+        <div className="relative flex flex-col justify-center items-center">
           <motion.h1
             variants={textVariant(1.1)}
-            className="font-bold text-xl lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white"
+            className="font-bold text-[66px] sm:text-[72px] md:text-[100px] lg:text-[144px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white"
           >
             Metaverse
           </motion.h1>
           <motion.div
             variants={textVariant(1.2)}
-            className="flex flex-row justify-center items-center"
+            className="flex flex-row justify-center items-center z-20"
           >
-            <h1 className="font-bold text-xl lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white">
+            <h1 className="font-bold text-[66px] sm:text-[72px] md:text-[100px] lg:text-[144px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white">
               Ma
             </h1>
-            <div className="md:w-[212px] sm:w-[80px] w-[60px] md:h-[108px] sm:h-[48px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]" />
-            <h1 className="font-bold text-xl lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white">
+            <div className="w-[92px] md:w-[212px] lg:w-[244px] h-[52px] sm:h-[56px] md:h-[82px] lg:h-[118px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]" />
+            <h1 className="font-bold text-[66px] sm:text-[72px] md:text-[100px] lg:text-[144px] lg:text-[144px]lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white">
               Ness
             </h1>
           </motion.div>
