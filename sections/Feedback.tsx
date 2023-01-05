@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { fadeIn, slideIn, zoomIn } from "../utils/motion";
 
 const Feedback = () => {
@@ -34,11 +35,14 @@ const Feedback = () => {
           variants={fadeIn("left", 0.2, 1)}
           className="relative flex-1 flex justify-center items-center"
         >
-          <img
-            src="/assets/planet-09.png"
-            alt="planet-09"
-            className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
-          />
+          <div className="w-full lg:h-[610px] min-h-[210px] relative">
+            <Image
+              src="/assets/planet-09.png"
+              alt="planet-09"
+              className="object-cover rounded-[40px]"
+              fill
+            />
+          </div>
 
           <motion.div
             variants={zoomIn(0.4, 1)}
