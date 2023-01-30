@@ -64,6 +64,7 @@ const Hero = () => {
             <div className="flex justify-end mt-auto sm:-mb-[75px] -mb-[50px] relative z-10">
               <Link href="#explore" className="mr-10">
                 <Image
+                  data-cy="heroStamp"
                   src="/assets/stamp.png"
                   alt="stamp"
                   className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain animate-[spin_3s_infinite] hover:animate-none hover:scale-90"

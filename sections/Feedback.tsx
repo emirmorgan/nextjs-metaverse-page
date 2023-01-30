@@ -49,6 +49,7 @@ const Feedback = () => {
             className="lg:block hidden absolute -left-[10%] top-[3%]"
           >
             <img
+              data-cy="feedbackStamp"
               src="/assets/stamp.png"
               alt="stamp"
               className="w-[155px] h-[155px] object-contain cursor-pointer animate-[spin_3s_infinite] hover:animate-none hover:scale-90"

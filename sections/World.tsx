@@ -30,7 +30,10 @@ const World = () => {
             fill
           />
           <div className="absolute bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
-            <div className="absolute left-0 top-0 w-full h-full bg-[#65c4fa] bg-opacity-50 rounded-full animate-[ping_2s_infinite]"></div>
+            <div
+              data-cy="blink-1"
+              className="absolute left-0 top-0 w-full h-full bg-[#65c4fa] bg-opacity-50 rounded-full animate-[ping_2s_infinite]"
+            ></div>
             <Image
               src="/assets/people-01.png"
               alt="people"
@@ -39,7 +42,10 @@ const World = () => {
             />
           </div>
           <div className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
-            <div className="absolute left-0 top-0 w-full h-full bg-[#8d39a3] bg-opacity-50 rounded-full animate-[ping_2s_infinite]"></div>
+            <div
+              data-cy="blink-2"
+              className="absolute left-0 top-0 w-full h-full bg-[#8d39a3] bg-opacity-50 rounded-full animate-[ping_2s_infinite]"
+            ></div>
             <Image
               src="/assets/people-02.png"
               alt="people"
@@ -48,7 +54,10 @@ const World = () => {
             />
           </div>
           <div className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
-            <div className="absolute left-0 top-0 w-full h-full bg-[#65c4fa] bg-opacity-50 rounded-full animate-[ping_2s_infinite]"></div>
+            <div
+              data-cy="blink-3"
+              className="absolute left-0 top-0 w-full h-full bg-[#65c4fa] bg-opacity-50 rounded-full animate-[ping_2s_infinite]"
+            ></div>
             <Image
               src="/assets/people-03.png"
               alt="people"
